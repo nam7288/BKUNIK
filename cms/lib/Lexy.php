@@ -129,8 +129,8 @@ class Lexy {
             }
         }
 
-
-        return $this->execute(file_get_contents($file), $params, $sandbox, $file);
+        $get_content = file_get_contents($file);
+        return $this->execute($get_content, $params, $sandbox, $file);
     }
 
     protected function get_cached_file($file, $sandbox) {
