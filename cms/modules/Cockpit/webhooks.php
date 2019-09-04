@@ -48,7 +48,7 @@ foreach ($webhooks as &$webhook) {
                 }
 
                 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, TRUE);
-                curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 1);
+                curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
                 curl_setopt($ch, CURLOPT_TIMEOUT, 1);
                 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
                 curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
